@@ -11,7 +11,7 @@ function GoPage() {
     useEffect(() => {
         firebase.getUrl(id).then(urll=>setUrl(urll.originalUrl));
         if(url!=""){
-          const isAbsoluteURL = (url) => url.startsWith('http://www.') || url.startsWith('https://www.');
+          const isAbsoluteURL = (url) => url.startsWith('http://') || url.startsWith('https://');
           const absoluteLink = isAbsoluteURL(url) ? url : `https://www.${url}`;
           window.location.assign(absoluteLink);
           // window.location.href = `https://www.${url}`
