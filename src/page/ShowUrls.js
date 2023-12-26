@@ -13,7 +13,7 @@ function ShowUrls() {
         <div>
             {data.map((data, idx) => (
                 <h1>
-                    {data.data().originalUrl} - https://tp-inky.vercel.app//{data.data().shortUrl}
+                    {data.data().originalUrl} - https://tp-inky.vercel.app/tp/{data.data().shortUrl}
                 </h1>
             ))}
         </div>
