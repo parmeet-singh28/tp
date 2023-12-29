@@ -20,6 +20,8 @@ function Home() {
 
       <button onClick={handelPutData}>Put Data</button>
       <button onClick={handelClick}>Read Data</button>
+      <button onClick={()=>firebase.loginSignupWithGoogle()}>Login</button>
+
     </div>
   );
 }
